@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 400px;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.form img{
+    width: 150px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+h1{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.inner{
+    margin-bottom: 20px;
+    height: 40px;
+    position: relative;
+}
+.group{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid #a1a1a1;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 2;
+}
+.lable{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #a1a1a1;
+    background-color: white;
+    font-size: 14px;
+    padding: 0 6px;
+    transition: 3;
+    user-select: none;
+}
+.group:focus+ .lable{
+    top: -8px;
+    z-index: 20;
+    color: #1b66c9;
+    font-weight: bold;
+}
+.group:focus{
+    border: 1px solid #1b66c9;
+}
+.group:not(:focus):valid+label{
+    top: -8px;
+    z-index: 10;
+}
+.showlable{
+    font-size: 18px;
+    font-weight: 500;
+}
+.bo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.bo .btn{
+    padding: 10px 25px;
+    background-color: rgb(57, 134, 234);
+    border: none;
+}
+.bo a{
+    text-decoration: none;
+}
+.bo .btn:hover{
+    cursor: pointer;
+    background-color: rgba(57, 134, 234,0.8);
+}
